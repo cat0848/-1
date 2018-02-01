@@ -9,3 +9,22 @@ focus_tree = {
 			add = 10
 			tag = ODA
 		}
+		
+		focus = {
+		id = ODA_001_political_tree
+		#일본 통일의 발판
+		icon = GFX_goal_generic_demand_territory #임시로 이 이미지로 통일
+		text = oda_001_political_tree
+		x = -5
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
