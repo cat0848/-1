@@ -10,6 +10,8 @@ focus_tree = {
 			tag = ODA
 		}
 		
+		default = no
+		
 		focus = {
 		id = ODA_001_political_tree
 		#일본 통일의 발판
