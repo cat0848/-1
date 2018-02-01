@@ -1,0 +1,11 @@
+focus_tree = {
+	id = oda_focus
+	
+	country = {
+		factor = 1
+	}
+	
+	modifier = {
+			add = 10
+			tag = ODA
+		}
