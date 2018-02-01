@@ -531,3 +531,9 @@ D15 = {
 	color = rgb { 194 140 86 }
 	color_ui = rgb { 252 182 112 }
 }
+
+IKO = {
+	color = rgb { 196 143 12 }
+	color_ui = rgb { 196 143 12 }
+}
+
