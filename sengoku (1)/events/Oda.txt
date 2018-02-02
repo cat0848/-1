@@ -16,3 +16,16 @@ country_event = {
                 add_ideas = ODA_dead_dosan
         }
 }
+
+country_event = {
+        id = oda.2
+        title = oda.2.t
+        desc = oda.2.d
+        picture = GFX_news_event_001
+        
+        is_triggered_only = yes
+        
+        option = {
+                name =  oda.2.a
+        }
+}
