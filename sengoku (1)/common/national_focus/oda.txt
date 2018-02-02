@@ -20,6 +20,7 @@ focus_tree = {
 	text = oda_001_political_tree
 	available = {
 	    date < 1556.05.28
+	}
 	x = -5
 	y = 1
 	cost = 17
