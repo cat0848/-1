@@ -55,7 +55,7 @@ focus_tree = {
 	available_if_capitulated = yes
 
 	completion_reward = {
-		GER = {
+		ODA = {
 			country_event = ODA_events.1
 		}
 		remove_ideas = ODA_ODA_power_struggle
