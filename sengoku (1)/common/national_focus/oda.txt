@@ -35,4 +35,31 @@ focus_tree = {
 		add_ideas = ODA_stable_country
 		}
 	}
+	
+	focus = {
+	id = ODA_002_political_tree
+	#노부유키 암살
+	prerequisite = { focus = ODA_001_political_tree }
+	icon = GFX_goal_generic_demand_territory #임시로 이 이미지로 통일
+	text = oda_002_political_tree
+	available = {
+	    date > 1556.08.24
+	}
+	x = -5
+	y = 3
+	cost = 17
+	ai_will_do = {
+		factor = 1
+	}
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		GER = {
+				country_event = ODA_events.1
+		}
+		remove_ideas = ODA_ODA_power_struggle
+		add_ideas = ODA_ODA_cold_nobunaga
+		}
+	}
 }	
