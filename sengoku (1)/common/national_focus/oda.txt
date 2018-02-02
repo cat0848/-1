@@ -12,9 +12,29 @@ focus_tree = {
 		
 	default = no
 	reset_on_civilwar = no
-		
+	
 	focus = {
 	id = ODA_001_political_tree
+	#일본 통일의 발판
+	icon = GFX_goal_generic_demand_territory #임시로 이 이미지로 통일
+	text = oda_001_political_tree
+	x = -5
+	y = 1
+	cost = 18
+	ai_will_do = {
+		factor = 1
+	}
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		ODA = {
+			country_event = ODA_events.1
+		}
+	}
+	
+	focus = {
+	id = ODA_002_political_tree
 	#국가 안정화
 	icon = GFX_goal_generic_demand_territory #임시로 이 이미지로 통일
 	text = oda_001_political_tree
@@ -37,7 +57,7 @@ focus_tree = {
 	}
 	
 	focus = {
-	id = ODA_002_political_tree
+	id = ODA_003_political_tree
 	#노부유키 암살
 	prerequisite = { focus = ODA_001_political_tree }
 	icon = GFX_goal_generic_demand_territory #임시로 이 이미지로 통일
@@ -57,8 +77,8 @@ focus_tree = {
 	completion_reward = {
 		remove_ideas = ODA_ODA_power_struggle
 		add_ideas = ODA_ODA_cold_nobunaga
-		ODA = {
-			country_event = ODA_events.1
+				ODA = {
+			country_event = ODA_events.2
 			}
 		}
 	}
