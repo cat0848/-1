@@ -1,1 +1,18 @@
-121212121
+#oda events
+#ah i felt dead
+
+add_namespace = oda
+
+country_event = {
+        id = oda.1
+        title = oda.1.t
+        desc = oda.1.d
+        picture = GFX_news_event_001
+        
+        is_triggered_only = yes
+        
+        option = {
+                name =  oda.1.a
+                add_ideas = ODA_dead_dosan
+        }
+}
