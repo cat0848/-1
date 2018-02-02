@@ -47,7 +47,7 @@ focus_tree = {
 	}
 	x = -5
 	y = 3
-	cost = 17
+	cost = 20
 	ai_will_do = {
 		factor = 1
 	}
@@ -55,11 +55,11 @@ focus_tree = {
 	available_if_capitulated = yes
 
 	completion_reward = {
-		ODA = {
-			country_event = ODA_events.1
-		}
 		remove_ideas = ODA_ODA_power_struggle
 		add_ideas = ODA_ODA_cold_nobunaga
+		ODA = {
+			country_event = ODA_events.1
+			}
 		}
 	}
 }	
