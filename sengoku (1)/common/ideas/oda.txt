@@ -34,7 +34,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = -0.03
+				consumer_goods_factor = 0.10
 			}
 		}
 
@@ -70,7 +70,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_power_cost = 0.5
+				political_power_cost = 0.3
 				industrial_capacity_factory  = -0.3
 				industrial_capacity_dockyard = -0.3
 				unity_factor = -0.3
@@ -110,6 +110,79 @@ ideas = {
 			
 			modifier = {
 				political_power_cost = 0.55
+			}
+		}
+		
+		ODA_cold_nobunaga = {
+		
+		
+		allowed = {
+			always = no
+		}
+		
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		removal_cost = -1
+		
+		modifier = {
+			political_power_cost = 0.15
+			}
+		}
+		
+		ODA_dead_dosan = {
+		
+		
+		allowed = {
+			always = no
+		}
+		
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		removal_cost = -1
+		
+		modifier = {
+			political_power_cost = 0.20
+			}
+		}
+		
+		ODA_stable_country
+		
+		
+		allowed = {
+			always = no
+		}
+		
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		removal_cost = -1
+		
+		modifier = {
+			political_power_gain = 0.05
+			}
+		}
+		
+		ODA_integrated_owari
+		
+		
+		allowed = {
+			always = no
+		}
+		
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		removal_cost = -1
+		
+		modifier = {
+			industrial_capacity_factory  = 0.2
+			industrial_capacity_dockyard = 0.2
 			}
 		}
 	}
