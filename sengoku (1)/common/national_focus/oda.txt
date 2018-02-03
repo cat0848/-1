@@ -15,12 +15,33 @@ focus_tree = {
 	
 	focus = {
 	id = ODA_001_political_tree
-	#일본 통일의 발판
+	#오와리의 미래
+	#prerequisite = { focus = ODA_001_political_tree }
 	icon = GFX_goal_generic_demand_territory #임시로 이 이미지로 통일
 	text = oda_001_political_tree
 	x = -5
 	y = 1
-	cost = 18
+	cost = 10
+	ai_will_do = {
+		factor = 1
+	}
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		remove_ideas = ODA_owarino_baka
+		}
+	}	
+
+	focus = {
+	id = ODA_002_political_tree
+	#일본 통일의 발판
+	prerequisite = { focus = ODA_001_political_tree }
+	icon = GFX_goal_generic_demand_territory #임시로 이 이미지로 통일
+	text = oda_002_political_tree
+	x = -5
+	y = 3
+	cost = 11
 	ai_will_do = {
 		factor = 1
 	}
@@ -29,21 +50,24 @@ focus_tree = {
 
 	completion_reward = {
 		ODA = {
-			country_event = ODA_events.1
+			country_event = { id = oda.1 days = 1 }
+
+			}
 		}
-	}
+	}	
 	
 	focus = {
-	id = ODA_002_political_tree
+	id = ODA_003_political_tree
 	#국가 안정화
+	prerequisite = { focus = ODA_002_political_tree }
 	icon = GFX_goal_generic_demand_territory #임시로 이 이미지로 통일
-	text = oda_001_political_tree
+	text = oda_003_political_tree
 	available = {
 	    date > 1556.05.28
 	}
 	x = -5
-	y = 1
-	cost = 17
+	y = 5
+	cost = 12
 	ai_will_do = {
 		factor = 1
 	}
@@ -51,23 +75,26 @@ focus_tree = {
 	available_if_capitulated = yes
 
 	completion_reward = {
+		ODA = {
+			country_event = { id = oda.2 days = 5 }
+			}
 		remove_ideas = ODA_dead_dosan
 		add_ideas = ODA_stable_country
 		}
 	}
 	
 	focus = {
-	id = ODA_003_political_tree
+	id = ODA_004_political_tree
 	#노부유키 암살
-	prerequisite = { focus = ODA_001_political_tree }
+	prerequisite = { focus = ODA_003_political_tree }
 	icon = GFX_goal_generic_demand_territory #임시로 이 이미지로 통일
-	text = oda_002_political_tree
+	text = oda_004_political_tree
 	available = {
 	    date > 1556.08.24
 	}
 	x = -5
-	y = 3
-	cost = 20
+	y = 7
+	cost = 10
 	ai_will_do = {
 		factor = 1
 	}
@@ -75,11 +102,11 @@ focus_tree = {
 	available_if_capitulated = yes
 
 	completion_reward = {
-		remove_ideas = ODA_ODA_power_struggle
-		add_ideas = ODA_ODA_cold_nobunaga
-				ODA = {
-			country_event = ODA_events.2
+		ODA = {
+			country_event = { id = oda.3 days = 4 }
 			}
+		remove_ideas = ODA_power_struggle
+		add_ideas = ODA_cold_nobunaga
 		}
 	}
-}	
+}
