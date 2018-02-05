@@ -49,7 +49,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Doyotomi Hideyoshi"
+	name = "Miyoshi Nagayoshi"
 	desc = "POLITICS_ADOLF_HITLER_DESC"
 	picture = "gfx/leaders/MIY/Miyoshi Nagayoshi.dds"
 	expire = "1965.1.1"
@@ -59,7 +59,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Dokugawa Ieyasu"
+	name = "Miyoshi Nagayoshi"
 	desc = "POLITICS_KONRAD_ADENAUER_DESC"
 	picture = "gfx/leaders/MIY/Miyoshi Nagayoshi.dds"
 	expire = "1965.1.1"
@@ -69,7 +69,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Akechi Mitsuhide"
+	name = "Miyoshi Nagayoshi"
 	desc = "POLITICS_WILHELM_PIECK_DESC"
 	picture = "gfx/leaders/MIY/Miyoshi Nagayoshi.dds"
 	expire = "1965.1.1"
