@@ -536,4 +536,8 @@ IKO = {
 	color = rgb { 196 143 12 }
 	color_ui = rgb { 196 143 12 }
 }
+KIT = {
+	color = rgb { 68 54 54 }
+	color_ui = rgb { 176 98 249 }
+}
 
